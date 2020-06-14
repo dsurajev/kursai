@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="lt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Apklausos forma</title>
+	</head>
+
+	<body>
+		<form>
+			<fieldset>
+				<legend>
+					Jūsų duomenys
+				</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="name">
+									Vardas:</label>
+								<input type="text" id="name">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="surname">
+									Pavardė:
+								</label>
+								<input type="text" id="surname">
+							</td>
+						</tr>
+					</table>
+			</fieldset>
+		</form>
+		<form>
+			<fieldset>
+				<legend>
+					Klausimai
+				</legend>
+
+				<table>
+					<tr>
+						<td>
+							<label for="source">
+								Kaip sužinojote apie mus?</label>
+							<select id="source">
+								<option>
+									Google
+								</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>
+								Ar apsilankysite vėl?
+							</label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label for="visiting-question-yes">
+								Taip
+							</label>
+						 	<input type="radio" id="visiting-question-yes" name="visiting-questions">
+
+							<label for="visiting-question-no">
+								Ne
+							</label>
+						 	<input type="radio" id="visiting-question-no" name="visiting-questions">
+
+							<label for="visiting-question-maybe">
+								Galbūt
+							</label>
+							<input type="radio" id="visiting-question-maybe" name="visiting-questions">
+							<tr>
+								<td>
+									<br>
+								</td>
+								<!--Šioje vietoje (87 ir 88 eilutės) validatorius rodo, kad /tr ir /td tagai yra "stray" tagai, nors jie turi pradžią abu.-->
+							</tr>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="course-review">
+								Ką manote apie kursą?
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<textarea id="course-review" placeholder="Rašykite viską ką galvojate"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>
+								Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="c-sharp">
+								C#
+							</label>
+							<input type="checkbox" id="c-sharp" name="coding-languages">
+
+							<label for="JAVA">
+								JAVA
+							</label>
+							<input type="checkbox" id="JAVA" name="coding-languages">
+
+
+							<label for="PHP">
+								PHP
+							</label>
+							<input type="checkbox" id="PHP" name="coding-languages">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="HTML">
+								HTML
+							</label>
+							<input type="checkbox" id="HTML" name="coding-languages">
+
+							<label for="CSS">
+								CSS
+							</label>
+							<input type="checkbox" id="CSS" name="coding-languages">
+
+							<label for="JavaScript">
+								Javascript
+							</label>
+							<input type="checkbox" id="JavaScript" name="coding-languages">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="Python">
+								Python
+							</label>
+							<input type="checkbox" id="Python" name="coding-languages">
+
+							<label for="Ruby">
+								Ruby
+							</label>
+							<input type="checkbox" id="Ruby" name="coding-languages">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>
+						</td>
+					</tr>
+
+				</table>
+
+				<table>
+					<tr>
+						<td>
+							<input type="submit" value="Siųsti">
+						</td>
+					</tr>
+				</table>
+
+			</fieldset>
+		</form>
+	</body>
+</html>
