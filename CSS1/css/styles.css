@@ -1,0 +1,25 @@
+#main-heading
+{
+	color: #ff99bb;
+}
+
+p#first-p
+{
+	font-family: courier;
+}
+
+p#first-p > span
+{
+	font-style: italic;
+}
+
+#subheading-first
+{
+	color: #ffb3cc;
+}
+
+#second-p
+{
+	font-family: monospace;
+}
+
