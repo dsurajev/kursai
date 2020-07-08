@@ -1,0 +1,239 @@
+/* CSS variables */
+:root {
+	--primary: #c36cbb;
+
+}
+/* reset */
+body,p,a,ul,li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+
+}
+.button {
+	background: none;
+	border: 2px solid var(--primary);
+	color: var(--primary);
+	padding: 6px 12px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+	display: inline-block;
+}
+
+.button:hover {
+	color: #fff;
+	background: var(--primary);
+}
+input,textarea {
+	background: rgba(255,255,255,0.05);
+	padding: 10px 16px;
+	border-radius: 20px;
+	border: 2px solid #c36cbb;
+	color: #c36cbb;
+}
+/* base styles */
+body {
+	font-family: poppins, sans-serif;
+}
+
+
+/* fonts */
+h1,h2,h3,h4 {
+	color: #5f5f79;
+	font-weight: normal;
+}
+
+p,a,li {
+	color:	#585772;
+}
+
+h1, h3 {
+	font-size: 1.2em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.1em;
+}
+.main-text {
+	font-size: 1.1em;
+}
+
+/* font awesome icon colors */
+
+.fa-calculator {
+	color: ;
+}
+.fa-clock {
+	color: ;
+}
+.fa-palette {
+	color: ;
+}
+.fa-html5 {
+	color: #f06529;
+}
+.fa-css3-alt {
+	color: #2965f1;
+}
+.fa-js-square {
+	color: #f0db4f;
+}
+.fa-php {
+	color: #787CB5;
+}
+
+/* mobile CSS */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 10px;
+	box-sizing: border-box;
+}
+.hamburger {
+	position: relative;
+	cursor: pointer;
+	padding: 15px;
+	grid-column: 1/1;
+}
+
+.part1, .part2, .part3 {
+	width: 35px;
+	height: 5px;
+	background-color: var(--primary);
+	margin: 6px 0;
+	transition: 0.4s;
+}
+.change .part1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .part2 {opacity: 0;}
+
+.change .part3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
+}
+.site-nav {
+	margin:0 20px;
+}
+.site-nav ul {
+	/*display: flex;
+	grid-column: 6/9;
+	justify-content: flex-end;
+	align-self: center;*/
+	display: none;
+}
+.site-nav h1 {
+	grid-column: 2/6;
+	border-bottom: 3px solid var(--primary);
+}
+#welcome {
+	padding: 0 20px 20px 20px;
+}
+.welcome-text {
+	grid-column: 1/6;
+}
+.welcome-img {
+	grid-column: 6/9;
+}
+.welcome-text a {
+	margin: 20px 0px;
+}
+#portfolio {
+	padding: 30px 20px;
+}
+#portfolio h3 {
+	margin-bottom: 0;
+	text-align: center;
+}
+.projects a {
+	grid-column: 1/9;
+	margin: 20px 0;
+	display: flex;
+}
+.projects a *{
+	margin: 0 20px;
+	max-width: 40%;
+	align-self: center;
+}
+.projects h4 {
+	color: #585772;
+}
+#skills {
+	padding: 30px 20px;
+}
+#skills h3 {
+	text-align: center;
+	padding:
+}
+#skills ul {
+	margin: 40px 0;
+}
+#skills li {
+	padding: 10px;
+	background: rgba(0,0,0,0.1);
+	grid-column: span 4;
+	text-align: center;
+}
+#skills i {
+	height: 80px;
+	margin: 10px auto;
+}
+.contact {
+	padding: 30px 20px;
+}
+.contact h3, .contact p{
+	text-align: center;
+
+}
+.contact form {
+	width: 80%;
+	max-width: 400px;
+	margin: 20px auto;
+	text-align: center;
+}
+.contact input, .contact textarea {
+	width: 100%;
+	margin: 10px 0;
+}
+.contact .button {
+	margin: 15px;
+}
+footer {
+	padding: 30px 20px;
+}
+footer .copyright {
+	grid-column: 4/6;
+	font-size: 0.8em;
+	text-align: center;
+}
+footer .social {
+	grid-column: 4/6;
+	display: flex;
+}
+footer li {
+	margin: 0 10px;
+}
+/* tablet CSS*/
+@media screen and (min-width: 620px){
+
+}
+/* laptop CSS */
+@media screen and (min-width: 960px){
+
+}
+
+/* desktop CSS */
+@media screen and (min-width: 1200px){
+
+}
+
