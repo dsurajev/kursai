@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #48D09B;
+	font-family: monospace;
+	font-size: 24pt;
+
+}
+.color {
+	margin-top: 300px;
+	text-align: center;
+}
+.hex {
+	display: block;
+	color: white;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 20px;
+}
+.color button {
+	cursor: pointer;
+	background: none;
+	outline: none;
+	color: white;
+	border: 2px solid white;
+	font-size: 24pt;
+
+}
