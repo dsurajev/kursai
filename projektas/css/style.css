@@ -1,8 +1,7 @@
 /* CSS variables */
 :root {
-	--primary: #c36cbb;
+	--primary: #000;
 	--secondary: #5f5f79;
-
 }
 /* reset */
 body,p,a,ul,li {
@@ -27,6 +26,7 @@ li {
 	display: inline-block;
 	text-align: center;
 	outline: none;
+	transition: 1s all ease;
 }
 
 .button:hover {
@@ -38,10 +38,14 @@ input,textarea {
 	background: rgba(255,255,255,0.05);
 	padding: 10px 16px;
 	border-radius: 20px;
-	border: 2px solid #c36cbb;
-	color: #c36cbb;
+	border: 2px solid var(--primary);
+	color: var (--primary);
 	outline: none;
-
+	resize: none;
+}
+textarea {
+	height: 80px;
+	overflow: hidden;
 }
 /* base styles */
 body {
@@ -50,7 +54,7 @@ body {
 /* fonts */
 h1,h2,h3,h4 {
 	color: #5f5f79;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 p,a,li {
@@ -81,6 +85,7 @@ h4 {
 	color: #f0db4f;
 }
 .fa-php {
+	position: relative;
 	color: #787CB5;
 }
 .fa-github {
@@ -93,7 +98,6 @@ h4 {
 
 .site-nav {
 	display: flex;
-	position: relative;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #333;
@@ -116,6 +120,10 @@ h4 {
 	color: white;
 	padding: 1rem;
 }
+.nav-links li a:hover{
+	opacity: 0.5;
+	transition: 1s all ease;
+}
 .hamburger {
 	position: absolute;
 	top: .75rem;
@@ -134,17 +142,7 @@ h4 {
 	border-radius: 10px;
 }
 /* burger animation */
-.change .line1 {
--webkit-transform: rotate(-45deg) translate(-9px, 6px);
-transform: rotate(-45deg) translate(-9px, 6px);
-}
-.change .line2 {
-opacity: 0;
-}
-.change .line3 {
--webkit-transform: rotate(45deg) translate(-8px, -8px);
-transform: rotate(45deg) translate(-8px, -8px);
-}
+
 /* end of burger animation */
 .welcome-text {
 	padding: 0 20px 20px 20px;
@@ -183,7 +181,10 @@ transform: rotate(45deg) translate(-8px, -8px);
 }
 .projects {
 	display: flex;
-	justify-content: center;
+	justify-content: center;;
+}
+.projects a img {
+	padding: 15px;
 }
 img {
 	width: 300px;
@@ -191,13 +192,14 @@ img {
 }
 img:hover {
 	opacity: 0.5;
+	transition: 1s all ease-out;
 }
 
 	.contact {
 		padding: 20px 30px;
 		background-color: #F0F0F0;
 	}
-	.contact h3, .contact p {
+	.contact h2, .contact p {
 		text-align: center;
 	}
 	.contact form {
@@ -231,6 +233,10 @@ img:hover {
 	.hamburger {
 		display: flex;
 	}
+	.hamburger:hover {
+		opacity: 0.5;
+		transition: 1s all ease;
+	}
 	.nav-links {
 		display: none;
 		width: 100%;
@@ -249,11 +255,22 @@ img:hover {
 	.nav-links.active {
 		display: flex;
 	}
+	.change .line1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+	}
+	.change .line2 {
+	opacity: 0;
+	}
+	.change .line3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+	}
 	.contact {
 		padding: 20px 30px;
 		background-color: #F0F0F0;
 	}
-	.contact h3, .contact p {
+	.contact h2, .contact p {
 		text-align: center;
 	}
 	.contact form {
@@ -291,26 +308,25 @@ img:hover {
 	.skills-list li{
 		padding: 15px;
 	}
+	.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	.projects a img {
+	padding: 15px;
+	}
 }
-
-
-/*.change .line1 {
--webkit-transform: rotate(-45deg) translate(-9px, 6px);
-transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .line2 {
-opacity: 0;
-}
-
-.change .line3 {
--webkit-transform: rotate(45deg) translate(-8px, -8px);
-transform: rotate(45deg) translate(-8px, -8px);
-}*/
-
 /* tablet CSS*/
-@media screen and (min-width: 620px) {
-
+@media screen and (max-width: 660px) {
+	.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	.projects a img {
+	padding: 15px;
+	}
 }
 /* laptop CSS */
 @media screen and (min-width: 960px){

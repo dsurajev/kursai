@@ -5,12 +5,12 @@ $message = trim($_POST['message']);
 
 if (!empty($name) && !empty($email) && !empty($message)) {
 	if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		$headers = "From: $email";
+		$from = $email;
 		$to = "d.surajev@gmail.com";
 		$subject = "Nauja žinutė";
 		$author = 'Nuo: ' . $name . ', ' . $email;
 		$content = htmlspecialchars($message);
-		mail($to, $subject, $author, $content, $headers);
+		mail($to, $subject, $author, $content, $from);
 		echo "<script>alert('Thanks, your message was received. I will get back to you shortly!');</script>";
 	}
 }
